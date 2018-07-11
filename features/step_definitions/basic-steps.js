@@ -18,3 +18,7 @@ Then('I click {string}', function (string) {
            // Write code here that turns the phrase above into concrete actions
            return 'pending';
 });
+
+After(async  function()  {
+ return  await  this.closeHomePage()
+})

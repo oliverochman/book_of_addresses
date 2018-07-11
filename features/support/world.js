@@ -13,6 +13,10 @@ class AdressBook {
 
     await this.page.goto(HOME_PAGE);
   }
+
+  async  closeHomePage()  {
+   await  this.browser.close()
+  }
 }
 
 setWorldConstructor(AdressBook);
