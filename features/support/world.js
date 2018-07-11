@@ -31,6 +31,12 @@ class AdressBook {
     this.inputElement = await this.page.$(inputSelector)
     await this.inputElement.type(content)
   }
+
+  async  clickOnAddContactBtn()  {
+    const btnSelector =  '.save-contact'
+    await  this.page.waitForSelector(btnSelector)
+    await  this.page.click(btnSelector)
+  }
 }
 
 setWorldConstructor(AdressBook);

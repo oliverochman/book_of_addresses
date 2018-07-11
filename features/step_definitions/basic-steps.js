@@ -12,10 +12,9 @@ Then('I fill in {string} with {string}', async function(field, content) {
   return await this.fillFormField(field.toLowerCase(), content);
 })
 
-Then('I click {string}', function (string) {
-           // Write code here that turns the phrase above into concrete actions
-           return 'pending';
-});
+When('I click {string}',  async  function(string)  {
+ return  await  this.clickOnAddContactBtn()
+})
 
 After(async  function()  {
  return  await  this.closeHomePage()
